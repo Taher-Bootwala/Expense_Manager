@@ -1,0 +1,55 @@
+Features
+Key Features Implemented
+✅ User Authentication
+
+Email/Password registration
+Login with credential validation
+Email duplication check
+Secure Firebase Authentication
+
+✅ Budget Management
+
+Set monthly budget
+Update budget anytime
+Visual progress indicator
+Budget warning alerts (75%, 100%)
+
+✅ Expense Tracking
+
+Add expenses with category
+Date picker for expense date
+Optional notes
+Real-time database sync
+
+✅ Expense Viewing
+
+Display all expenses
+Filter by specific date
+Show total expenditure
+Categorized with icons
+RecyclerView with CardView
+
+✅ Dashboard Analytics
+
+Monthly budget overview
+Total spent display
+Remaining budget
+Progress bar visualization
+Budget status warnings
+
+✅ User Profile
+
+View profile information
+Logout functionality
+Confirmation dialog
+
+Technologies Used
+
+Language: Java
+IDE: Android Studio
+Database: Firebase Realtime Database
+Authentication: Firebase Authentication
+UI Components: Material Design, CardView, RecyclerView
+Architecture: MVC Pattern
+Minimum SDK: 21 (Android 5.0 Lollipop)
+Target SDK: 36 (Android 13)
