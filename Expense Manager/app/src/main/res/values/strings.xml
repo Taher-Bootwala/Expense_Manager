@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Expense Manager</string>
+
+    <!-- Login/Register -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_subtitle">Login to your account</string>
+    <string name="create_account">Create Account</string>
+    <string name="signup_subtitle">Sign up to get started</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+
+    <!-- Dashboard -->
+    <string name="welcome">Welcome!</string>
+    <string name="monthly_budget_overview">Monthly Budget Overview</string>
+    <string name="budget">Budget</string>
+    <string name="spent">Spent</string>
+    <string name="remaining">Remaining</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="view_expenses">View Expenses</string>
+    <string name="set_budget">Set Budget</string>
+    <string name="profile">Profile</string>
+
+    <!-- Add Expense -->
+    <string name="add_new_expense">Add New Expense</string>
+    <string name="amount">Amount (₹)</string>
+    <string name="category">Category</string>
+    <string name="date">Date</string>
+    <string name="note">Note (Optional)</string>
+    <string name="save_expense">Save Expense</string>
+
+    <!-- View Expenses -->
+    <string name="my_expenses">My Expenses</string>
+    <string name="total">Total: ₹0.00</string>
+    <string name="filter_by_date">Filter by Date</string>
+    <string name="show_all">Show All</string>
+    <string name="no_expenses">No expenses found</string>
+
+    <!-- Set Budget -->
+    <string name="set_monthly_budget">Set Monthly Budget</string>
+    <string name="current_budget">Current Budget: Not Set</string>
+    <string name="new_budget_amount">New Budget Amount (₹)</string>
+    <string name="save_budget">Save Budget</string>
+    <string name="budget_tip">💡 Tip: Set a realistic monthly budget to track your spending effectively and stay within your financial goals.</string>
+
+    <!-- Profile -->
+    <string name="personal_information">Personal Information</string>
+    <string name="logout">Logout</string>
+    <string name="logout_message">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Messages -->
+    <string name="email_required">Email is required</string>
+    <string name="password_required">Password is required</string>
+    <string name="invalid_email">Please enter a valid email</string>
+    <string name="password_min_length">Password must be at least 6 characters</string>
+    <string name="passwords_dont_match">Passwords do not match</string>
+    <string name="registration_successful">Registration successful!</string>
+    <string name="login_successful">Login successful!</string>
+    <string name="email_already_registered">Email already registered</string>
+    <string name="invalid_credentials">Invalid credentials</string>
+    <string name="user_not_found">User not found</string>
+
+</resources>

@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'  // Important!
+}
+
+android {
+    namespace 'com.example.myapplication'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdk 21
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation libs.androidx.appcompat.v171
+    implementation libs.material.v1110
+    implementation libs.androidx.constraintlayout.v221
+
+    // Firebase BOM (Bill of Materials)
+    implementation platform(libs.firebase.bom.v3270)
+
+    // Firebase Authentication
+    implementation libs.google.firebase.auth
+
+    // Firebase Realtime Database
+    implementation libs.google.firebase.database
+
+    // Firebase Analytics (optional)
+    implementation libs.google.firebase.analytics
+
+    // RecyclerView & CardView
+    implementation libs.androidx.recyclerview.v132
+    implementation libs.androidx.cardview
+
+    // Testing
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit.v130
+    androidTestImplementation libs.androidx.espresso.core.v370
+}
