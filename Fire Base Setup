@@ -1,0 +1,107 @@
+Fire Base Setuo Steps: 
+Step 1: Create Firebase Project
+
+Go to Firebase Console
+Click "Add project"
+Enter project name: "Expense Manager"
+Follow the setup wizard
+
+Step 2: Register Android App
+
+In Firebase Console, click on Android icon
+Enter your package name: com.example.expensemanager
+Enter app nickname (optional): "Expense Manager"
+Download google-services.json
+Place the file in app/ directory of your Android project
+
+Step 3: Enable Firebase Authentication
+
+In Firebase Console, go to Authentication
+Click "Get Started"
+Enable Email/Password sign-in method
+Click "Enable" and save
+
+Step 4: Set Up Firebase Realtime Database
+
+In Firebase Console, go to Realtime Database
+Click "Create Database"
+Choose location (closest to your users)
+Start in Test Mode (for development)
+Update rules later for production:
+
+json{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "expenses": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+        ".indexOn": ["timestamp", "date"]
+      }
+    }
+  }
+}
+Step 5: Database Structure
+Your Firebase Realtime Database will have this structure:
+expense-manager-db/
+├── users/
+│   └── {userId}/
+│       ├── userId: "string"
+│       ├── fullName: "string"
+│       ├── email: "string"
+│       ├── monthlyBudget: number
+│       └── profileImageUrl: "string"
+│
+└── expenses/
+    └── {userId}/
+        └── {expenseId}/
+            ├── expenseId: "string"
+            ├── userId: "string"
+            ├── amount: number
+            ├── category: "string"
+            ├── date: "string" (DD-MM-YYYY)
+            ├── note: "string"
+            └── timestamp: number
+Step 6: Add Dependencies
+Make sure your build.gradle files are configured correctly (already provided in the project files).
+Step 7: Sync and Build
+
+Sync your project with Gradle files
+Build the project
+Run on emulator or physical device
+
+Security Rules for Production
+For production, update your Firebase Realtime Database rules:
+json{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+        ".validate": "newData.hasChildren(['userId', 'fullName', 'email'])"
+      }
+    },
+    "expenses": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+        "$expenseId": {
+          ".validate": "newData.hasChildren(['expenseId', 'userId', 'amount', 'category', 'date', 'timestamp'])"
+        }
+      }
+    }
+  }
+}
+Troubleshooting
+Common Issues:
+
+Google Services Error: Make sure google-services.json is in the correct location (app/ folder)
+Authentication Error: Verify Email/Password is enabled in Firebase Console
+Database Permission Denied: Check your database rules are set correctly
+Build Errors: Ensure all dependencies are properly synced
+Check dashboard for budget overview
