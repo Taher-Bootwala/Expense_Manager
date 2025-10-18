@@ -1,0 +1,60 @@
+Expense Manager - Complete Project Structure
+ExpenseManager/
+│
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/example/expensemanager/
+│   │   │   │   │
+│   │   │   │   ├── activities/
+│   │   │   │   │   ├── LoginActivity.java
+│   │   │   │   │   ├── RegisterActivity.java
+│   │   │   │   │   ├── DashboardActivity.java
+│   │   │   │   │   ├── AddExpenseActivity.java
+│   │   │   │   │   ├── ViewExpensesActivity.java
+│   │   │   │   │   ├── SetBudgetActivity.java
+│   │   │   │   │   └── ProfileActivity.java
+│   │   │   │   │
+│   │   │   │   ├── adapters/
+│   │   │   │   │   └── ExpenseAdapter.java
+│   │   │   │   │
+│   │   │   │   └── models/
+│   │   │   │       ├── User.java
+│   │   │   │       └── Expense.java
+│   │   │   │
+│   │   │   ├── res/
+│   │   │   │   ├── layout/
+│   │   │   │   │   ├── activity_login.xml
+│   │   │   │   │   ├── activity_register.xml
+│   │   │   │   │   ├── activity_dashboard.xml
+│   │   │   │   │   ├── activity_add_expense.xml
+│   │   │   │   │   ├── activity_view_expenses.xml
+│   │   │   │   │   ├── activity_set_budget.xml
+│   │   │   │   │   ├── activity_profile.xml
+│   │   │   │   │   └── item_expense.xml
+│   │   │   │   │
+│   │   │   │   ├── drawable/
+│   │   │   │   │   ├── spinner_background.xml
+│   │   │   │   │   ├── edittext_background.xml
+│   │   │   │   │   ├── circle_background.xml
+│   │   │   │   │   └── tip_background.xml
+│   │   │   │   │
+│   │   │   │   ├── values/
+│   │   │   │   │   ├── strings.xml
+│   │   │   │   │   ├── colors.xml
+│   │   │   │   │   └── themes.xml
+│   │   │   │   │
+│   │   │   │   └── mipmap/
+│   │   │   │       └── (app icons)
+│   │   │   │
+│   │   │   ├── AndroidManifest.xml
+│   │   │   └── google-services.json (from Firebase)
+│   │   │
+│   │   └── test/ (unit tests)
+│   │
+│   ├── build.gradle (app level)
+│   └── proguard-rules.pro
+│
+├── build.gradle (project level)
+├── settings.gradle
+└── gradle.properties
